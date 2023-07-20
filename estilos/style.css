@@ -15,7 +15,7 @@
 }
 
 body, html{
-    background-image: linear-gradient(to bottom, #592d77d4, #5c1e86);
+    background-color: #6b19a1;
     height: 100vh;
     width: 100vw;
 }
@@ -68,6 +68,7 @@ main{
 form .campo{
     display: block;
     background-color: #5c1e86;
+    border: 3px solid #5c1e86;
     width: 100%;
     height: 40px;
     border-radius: 5px;
@@ -76,6 +77,30 @@ form .campo{
 
 form label{
     display: none;
+}
+
+.campo i{
+    color: white;
+    /* background-color: black; */
+    width: 40px;
+    font-size: 2em;
+    padding: 5px;
+}
+
+.campo input{
+    background-color: #55d7d3;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    transform: translateY(-12px);
+    height: 100%;
+    border: none;
+    border-radius: 7px;
+    padding: 5px;
+   
+}
+
+.campo input:focus-within{
+    background-color: #93fffb;
 }
 
 form input[type=submit] {
